@@ -1,0 +1,299 @@
+/* General Styles */
+body, html{
+    width: 100%;
+}
+
+.home-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../assets/AI_discovery_of_a_new_way_to_enter_a_cell_could_boost_molecular_design_34bbe1c09c.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* Header */
+.header {
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icons Section */
+.icons-section {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    /* background-color: #ecf0f1; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.icon-container {
+    text-align: center;
+    flex: 1 1 calc(33.33% - 40px);
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    background-color: #e0e2e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    box-shadow: 0 17px 6px rgba(177, 176, 176, 0.1);
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(109, 107, 107, 0.2);
+}
+
+.icon-image {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icon-label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Chatbot */
+.chatbot {
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    background-color: rgb(51,51,51, .5);
+    box-shadow: 10px 14px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    flex: 1;
+}
+
+.chatbot-heading {
+    font-size: 20px;
+    color: #eef0f1;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.chat-window {
+    flex: 1;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    min-height: 200px; /* Ensures it has a minimum height */
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chat-message {
+    max-width: 75%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.bot-message {
+    background-color: #183446;
+    color: white;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #269253;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.chat-input {
+    flex: 1;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: rgb(51,51,51, .5);
+    box-shadow: 10px 14px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.chat-input:focus {
+     border-color: #1abc9c; 
+}
+
+.chat-send-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #3a413b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-heading {
+    font-size: 20px;
+    color: #fff; /* Adjusted text color for contrast */
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .chat-input-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: #aaa;
+    z-index: 1; /* Make sure the icon stays on top */
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 12px 12px 12px 40px; /* Adjust padding to make space for the icon */
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+ 
+  
+
+ 
+  
+  .chat-send-btn:focus {
+    outline: none;
+  }
+
+/* Chatbot */
+.chatbot {
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    flex: 1;
+}
+
+/* Chat window style */
+.chat-window {
+    flex: 1;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    min-height: 200px; /* Ensure it has a minimum height */
+    max-height: 400px; /* Set a maximum height for the chat window */
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 100%; /* Ensures it can grow to fill available space */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+
+.chat-send-btn:hover {
+    background-color: #34d807;
+}
+
+.chat-send-btn:focus {
+    outline: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 15px;
+    }
+
+    .icons-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .icon-container {
+        flex: 1 1 45%;
+    }
+
+    .chatbot {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-container {
+        flex: 1 1 100%;
+    }
+}
