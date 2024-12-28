@@ -103,8 +103,8 @@ function Login() {
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        const fixedEmail = "mhafeed@gmail.com";
-        const fixedPassword = "123456";
+        const fixedEmail = "abc@example.com";
+        const fixedPassword = "404";
 
         if (email === fixedEmail && password === fixedPassword) {
             window.location.href = "/home";
