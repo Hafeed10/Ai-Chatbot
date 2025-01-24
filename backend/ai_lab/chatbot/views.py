@@ -16,7 +16,7 @@ def ai_view(request):
             return JsonResponse({'error': 'No message provided'}, status=400)
 
         # Initialize the Groq client
-        client = Groq(api_key="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")  # Replace with your Groq API key
+        client = Groq(api_key="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")  # Replace with your Groq API key
 
         # Call the Groq API with user input
         try:
