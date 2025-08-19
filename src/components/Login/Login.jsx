@@ -134,6 +134,10 @@ function Login() {
                         <MdOutlineFacebook size={20}/>
                         <span>Continue with Facebook</span>
                     </button>
+                    <div>
+                        <p>abc@example.com</p>
+                        <p>404</p>
+                    </div>
                 </div>
             </div>
             {isPopupVisible && (
