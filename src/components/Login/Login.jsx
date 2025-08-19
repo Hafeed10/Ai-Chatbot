@@ -134,7 +134,7 @@ function Login() {
                         <MdOutlineFacebook size={20}/>
                         <span>Continue with Facebook</span>
                     </button>
-                    <div>
+                    <div className='max'>
                         <p>abc@example.com</p>
                         <p>404</p>
                     </div>
