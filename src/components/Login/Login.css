@@ -28,7 +28,8 @@ canvas {
     height: 100%;
 }
 
-
+.max{
+   color: #fff;
 .container {
     text-align: center;
     z-index: 1;
